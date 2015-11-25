@@ -15,17 +15,18 @@ body {
 	right: 35px;
 	//width: 100%;
 	margin: 0px;
+
 	.logo {
 		margin-top: 25px;
 		color: @YellowColor;
 		font-family: PoiretOne;
 		text-align: center;
 		h1 {
-			font-size: 55px;
+			font-size: 40px;
 			font-weight: 900;
 			//letter-spacing: 5px;
 			position: absolute;
-			top: 0px;
+			top: 10px;
 			left: 50%;
 			transform: translateX(-50%);
 			z-index: 50;
@@ -77,5 +78,56 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#edca69', end
 		&:hover {
 			box-shadow: 0 0 5px @YellowColor;
 		}
+	}
+	.article {
+		padding-left: 50px;
+		//padding-top: 30px;
+		margin-top: 100px;
+		margin-left: 30px;
+		text-align: center;
+		font-family: UbuntuRegular;
+		background: fadeout(@DarkColor, 50%);
+		box-shadow: 0 0 2px @OrangeColor;
+		h3 {
+			font-size: 30px;
+			color: @YellowColor;
+		}
+		p {
+			color: @RedColor;
+			font-size: 16px;
+		}
+		ul {
+			li {
+				text-align: left;
+				position: relative;
+				color: @OrangeColor;
+				margin-bottom: 15px;
+				.fa {
+					position: absolute;
+					left: -17px;
+					top: 4px;
+					color: @RedColor;
+				}
+				a {
+					color: @YellowColor;
+					text-decoration: none;
+					&:hover {
+						color: @RedColor;
+					}
+				}
+			}
+		}
+	}
+	.footer {
+		text-align: center;
+		background: fadeout(@RedColor, 70%);
+		position: absolute;
+		bottom: 0px;
+		height: 50px;
+		line-height: 50px;
+		color: @RedColor;
+		font-family: UbuntuRegular;
+		font-size: 15px;
+		font-weight: 700;
 	}
 }
